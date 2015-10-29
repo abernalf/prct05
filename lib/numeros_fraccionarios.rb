@@ -62,6 +62,28 @@ class Nf
              
         
     end
+    
+    def multiplicacion(x,y)
+        
+        x=@x * x
+        y=@y * y
+        
+        numerador,denominador = minimizar(x,y)
+        
+        return numerador,denominador
+    end
+    
+    def division(x,y)
+        
+        x = x*@y
+        y =@x*y
+        
+        numerador, denominador = minimizar(x,y)
+        
+        return numerador,denominador
+        
+    end
+        
 
     
   
