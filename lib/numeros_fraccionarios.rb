@@ -11,9 +11,9 @@ class Nf
         "(#{@x}/#{@y})"
     end
     
-    def suma(x,y)
-        x,y = minimizar(x,y)
-        @x,@y=minimizar(@x,@y)
+    def +(x,y)
+      #  x,y = minimizar(x,y)
+       # @x,@y=minimizar(@x,@y)
         
         #numerador,denominador = @x,@y
         if( y == @y)
@@ -40,7 +40,7 @@ class Nf
    
     end
     
-    def resta(x,y)
+    def -(x,y)
         x,y = minimizar(x,y)
         @x,@y=minimizar(@x,@y)
         
@@ -63,7 +63,7 @@ class Nf
         
     end
     
-    def multiplicacion(x,y)
+    def *(x,y)
         
         x=@x * x
         y=@y * y
@@ -73,7 +73,7 @@ class Nf
         return numerador,denominador
     end
     
-    def division(x,y)
+    def /(x,y)
         
         x = x*@y
         y =@x*y
